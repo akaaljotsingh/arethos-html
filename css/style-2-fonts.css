@@ -1,0 +1,21 @@
+/*-------------------
+Sample CSS overwriting main.css rules
+
+[Table of contents]
+    1. Typography
+[Typography]
+    font-family :
+    - Geometric : "Glacial Indifference", "Montserrat"
+    - Serif : "Serif, Playfair Display"
+*/
+/* 1. Typography */
+/* page header */
+.section-home.section-center .home-title {
+  font-family: "Jost", "Glacial Indifference", "Montserrat", "Open Sans", sans-serif;
+  font-size: 4rem; }
+  @media (min-width: 768px) {
+    .section-home.section-center .home-title {
+      font-size: 6rem; } }
+  @media (min-width: 1024px) {
+    .section-home.section-center .home-title {
+      font-size: 10rem; } }

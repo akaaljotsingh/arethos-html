@@ -1,0 +1,159 @@
+/*-------------------
+Sample CSS overwriting main.css rules
+
+[Table of contents]
+    0 General layout
+    1. Typography
+    2. page-header / .page-header
+    3. sections / .section-home
+    4. components /.media .form
+[Colors]
+    Black : #3d3d3d;
+    Color level 1 : #f5eadf;
+    Color level 2 : #F1DECF;
+    Color level 3 : #d8c1af;
+[Typography]
+    font-family :
+    Geometric : "Glacial Indifference", "Montserrat"
+*/
+/* 0 General layout */
+/* 0 General layout */
+/* 0.1 Body */
+body,
+.body-page {
+  background: #ffffff;
+  color: #03073f; }
+
+a {
+  color: #D50B27; }
+  a:hover {
+    color: rgba(213, 11, 39, 0.8); }
+
+.bg-primary {
+  background-color: #D50B27 !important; }
+
+.bg-secondary {
+  background-color: #f5eadf !important; }
+
+.text-primary {
+  color: #D50B27 !important; }
+
+.text-stroke.text-primary {
+  -webkit-text-stroke: 1.5px #D50B27;
+  color: transparent !important; }
+
+/* 2. page-header and footer / .page-header , .page-footer */
+/* menu icon */
+.menu-icon .bars .bar1, .menu-icon .bars .bar2, .menu-icon .bars .bar3 {
+  background: #D50B27; }
+
+/* nav */
+.page-header-drawer .navbar-mainmenu .mainmenu-content li a::before,
+.page-header-drawer .navbar-mainmenu .mainmenu-content .nav-item a::before {
+  background: #D50B27; }
+
+.page-footer .footer-left .social a:hover {
+  color: #D50B27; }
+
+/* 3. components */
+/* Buttons */
+/* scroll buttons */
+.scrolldown a:before, .scrolldown a:after {
+  color: #D50B27; }
+
+/* Buttons / .btn-*/
+.btn-outline-white {
+  color: currentColor;
+  border-color: currentColor; }
+
+.btn-divided {
+  border-color: #D50B27; }
+  .btn-divided .b-subtitle {
+    color: #D50B27; }
+
+.btn-solid.btn-primary {
+  color: #D50B27; }
+  .btn-solid.btn-primary.active, .btn-solid.btn-primary:active, .btn-solid.btn-primary:focus, .btn-solid.btn-primary:hover {
+    background: #D50B27;
+    color: #ffffff; }
+
+.btn-line.active .text, .btn-line:active .text, .btn-line:focus .text, .btn-line:hover .text {
+  color: #D50B27; }
+
+.btn-line .icon {
+  color: #D50B27; }
+
+.btn-outline.btn-primary {
+  color: #D50B27;
+  border-color: rgba(213, 11, 39, 0.2); }
+  .btn-outline.btn-primary.active, .btn-outline.btn-primary:active, .btn-outline.btn-primary:focus, .btn-outline.btn-primary:hover {
+    background: #D50B27;
+    border-color: #D50B27; }
+
+.btn-outline-white {
+  background: transparent; }
+  .btn-outline-white:hover {
+    background: #D50B27;
+    border-color: #D50B27; }
+
+/* Forms */
+.form-control-outline, .form-control-line {
+  border-color: #03073f; }
+
+/* Media / .media- */
+.media-pricing.media-highlight {
+  color: #D50B27; }
+  .media-pricing.media-highlight h2, .media-pricing.media-highlight .title {
+    color: #D50B27; }
+
+.media-slide-item-alpha .media-body {
+  color: #D50B27; }
+
+.media-aside-text .media-body {
+  color: #03073f; }
+
+.media-aside-text:hover .media-body {
+  color: #D50B27; }
+
+.media-number h4 {
+  color: #D50B27; }
+
+.media-slide-item-gamma .media-body h4 {
+  color: #D50B27; }
+
+.media-slide-item-beta .media-image .frame {
+  border-color: #D50B27; }
+
+/* slider */
+.slider-swiper-alpha .items-pagination {
+  color: #D50B27; }
+
+.slider-swiper-alpha .items-pagination .swiper-pagination-bullet {
+  border-color: #D50B27; }
+
+.slider-swiper-beta .items-pagination {
+  color: #D50B27; }
+
+.slider-swiper-beta .items-pagination .swiper-pagination-bullet {
+  border-color: #D50B27; }
+
+.slider-swiper-gamma .items-pagination {
+  color: #D50B27; }
+
+.slider-swiper-gamma .items-pagination .swiper-pagination-bullet {
+  border-color: #D50B27; }
+
+/* 4. sections */
+.content-black h1, .content-black h2, .content-black h3, .content-black h4, .content-black h5, .content-black h6 {
+  color: #1d1d1d; }
+
+.content-white .text-stroke {
+  -webkit-text-stroke: 1.5px #ffffff;
+  color: transparent !important; }
+
+.content-white h1, .content-white h2, .content-white h3, .content-white h4, .content-white h5, .content-white h6 {
+  color: #ffffff; }
+
+/* Footer */
+.page-footer .footer-left .social:after {
+  background: #D50B27; }

@@ -1,0 +1,182 @@
+/*-------------------
+Sample CSS overwriting main.css rules
+
+[Table of contents]
+    0 General layout
+    1. Typography
+    2. page-header and page footer/ .page-header, .page-footer
+    3. components /.media .form .btn .slider-...
+    4. sections / .section-home
+[Colors]
+    Black : #1d1d1d;
+    Dark-black : #0d0d0d;
+    Grey-Black : #3d3d3d;
+    Color bg secondary : #f5eadf;
+[Typography]
+    font-family :
+    - Geometric : "Glacial Indifference", "Montserrat"
+    - Serif : "Serif, Playfair Display"
+*/
+/* 0 Generargb(119, 95, 98)t */
+/* 0.1 Font */
+/* 0 General layout */
+/* 0.1 Body */
+body,
+.body-page {
+  background: #ffffff;
+  color: #0d0d0d; }
+
+a {
+  color: #3d3d3d; }
+  a:hover {
+    color: rgba(61, 61, 61, 0.8); }
+
+.bg-primary {
+  background-color: #3d3d3d !important; }
+
+.bg-secondary {
+  background-color: #f5eadf !important; }
+
+.text-primary {
+  color: #3d3d3d !important; }
+
+.text-stroke.text-primary {
+  -webkit-text-stroke: 1.5px #3d3d3d;
+  color: transparent !important; }
+
+/* 2. page-header and footer / .page-header , .page-footer */
+/* menu icon */
+.menu-icon .bars .bar1, .menu-icon .bars .bar2, .menu-icon .bars .bar3 {
+  background: #3d3d3d; }
+
+/* nav */
+.page-header-drawer .navbar-mainmenu .mainmenu-content li a::before,
+.page-header-drawer .navbar-mainmenu .mainmenu-content .nav-item a::before {
+  background: #3d3d3d; }
+
+.page-footer .footer-left .social a:hover {
+  color: #3d3d3d; }
+
+/* 3. components */
+/* Buttons */
+/* scroll buttons */
+.scrolldown a:before, .scrolldown a:after {
+  color: #3d3d3d; }
+
+/* Buttons / .btn-*/
+.btn-outline-white {
+  color: currentColor;
+  border-color: currentColor; }
+
+.btn-divided {
+  border-color: #3d3d3d; }
+  .btn-divided .b-subtitle {
+    color: #3d3d3d; }
+
+.btn-solid.btn-primary {
+  color: #3d3d3d; }
+  .btn-solid.btn-primary.active, .btn-solid.btn-primary:active, .btn-solid.btn-primary:focus, .btn-solid.btn-primary:hover {
+    background: #3d3d3d;
+    color: #ffffff; }
+
+.btn-line.active .text, .btn-line:active .text, .btn-line:focus .text, .btn-line:hover .text {
+  color: #3d3d3d; }
+
+.btn-line .icon {
+  color: #3d3d3d; }
+
+.btn-outline.btn-primary {
+  color: #3d3d3d;
+  border-color: rgba(61, 61, 61, 0.2); }
+  .btn-outline.btn-primary.active, .btn-outline.btn-primary:active, .btn-outline.btn-primary:focus, .btn-outline.btn-primary:hover {
+    background: #3d3d3d;
+    border-color: #3d3d3d; }
+
+.btn-outline-white {
+  background: transparent; }
+  .btn-outline-white:hover {
+    background: #3d3d3d;
+    border-color: #3d3d3d; }
+
+/* Forms */
+.form-control-outline, .form-control-line {
+  border-color: #0d0d0d; }
+
+/* Media / .media- */
+.media-pricing.media-highlight {
+  color: #3d3d3d; }
+  .media-pricing.media-highlight h2, .media-pricing.media-highlight .title {
+    color: #3d3d3d; }
+
+.media-slide-item-alpha .media-body {
+  color: #3d3d3d; }
+
+.media-aside-text .media-body {
+  color: #0d0d0d; }
+
+.media-aside-text:hover .media-body {
+  color: #3d3d3d; }
+
+.media-number h4 {
+  color: #3d3d3d; }
+
+.media-slide-item-gamma .media-body h4 {
+  color: #3d3d3d; }
+
+.img-frame-normal .frame,
+.media-slide-item-beta .media-image .frame {
+  border-color: #3d3d3d; }
+
+.media-slide-item-alpha .media-body h3 {
+  -webkit-text-stroke: 1px #ffffff; }
+
+.media-feature h4 {
+  color: #3d3d3d; }
+
+/* slider */
+.slider-swiper-alpha .items-pagination {
+  color: #3d3d3d; }
+
+.slider-swiper-alpha .items-pagination .swiper-pagination-bullet {
+  border-color: #3d3d3d; }
+
+.slider-swiper-beta .items-pagination {
+  color: #3d3d3d; }
+
+.slider-swiper-beta .items-pagination .swiper-pagination-bullet {
+  border-color: #3d3d3d; }
+
+.slider-swiper-gamma .items-pagination {
+  color: #3d3d3d; }
+
+.slider-swiper-gamma .items-pagination .swiper-pagination-bullet {
+  border-color: #3d3d3d; }
+
+/* 4. sections */
+.content-black h1, .content-black h2, .content-black h3, .content-black h4, .content-black h5, .content-black h6 {
+  color: #1d1d1d; }
+
+.content-white .text-stroke {
+  -webkit-text-stroke: 1.5px #ffffff;
+  color: transparent !important; }
+
+.content-white h1, .content-white h2, .content-white h3, .content-white h4, .content-white h5, .content-white h6 {
+  color: #ffffff; }
+
+/* section home */
+.section-home .home-cover {
+  background: url("../img/bg-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6; }
+  @media (min-width: 768px) {
+    .section-home .home-cover {
+      background: url("../img/bg-default-1.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      opacity: 0.2; } }
+
+/* Footer */
+.page-footer .footer-left .social:after {
+  background: #3d3d3d; }

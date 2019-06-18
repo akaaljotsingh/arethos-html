@@ -11,10 +11,12 @@
 
   <!-- Meta -->
   <!-- Page Description Here -->
-  <meta name="description" content="A beautiful and creative portfolio template. It is mobile friend (responsive) and comes with smooth animations">
+  <meta name="description"
+    content="A beautiful and creative portfolio template. It is mobile friend (responsive) and comes with smooth animations">
 
   <!-- Disable screen scaling-->
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
 
   <!-- Twitter Meta -->
   <meta name="twitter:site" content="@miradontsoa">
@@ -55,7 +57,7 @@
   <link rel="stylesheet" href="css\main.css">
 
   <!-- add alt layout here -->
-  <link rel="stylesheet" href="css\style-1.css">
+  <link id="stl" rel="stylesheet" href="css\style-1.css">
 
   <script src="js\vendor\modernizr-2.7.1.min.js"></script>
 </head>
@@ -77,6 +79,10 @@
   <header class="page-header navbar page-header-drawer menu-right logo-left topmenu-right ">
 
     <!-- Begin of menu icon toggler -->
+    <span class="theming">
+        <a id="original"></a>
+        <a id="grayscale"></a>
+    </span>
     <button class="navbar-toggler site-menu-icon" id="navMenuIcon">
       <!-- Available class : menu-icon-dot / menu-icon-line / menu-icon-dual-->
       <span class="menu-icon menu-icon-dual">
@@ -86,7 +92,10 @@
           <span class="bar3"></span>
         </span>
       </span>
+
+      
     </button>
+
     <!-- End of menu icon toggler -->
 
     <!-- Begin of logo/brand -->
@@ -127,20 +136,20 @@
               <a class="nav-link" href="demo.html">Demo</a>
             </li> -->
             <li class="nav-item active">
-                <a class="nav-link" href="index-style-1.html#home">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="gallery-style-1.html">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="item-style-1.html">Item</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="products-style-1.html">Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
-              </li>
+              <a class="nav-link" href="index-style-1.html#home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery-style-1.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="item-style-1.html">Item</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products-style-1.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -218,9 +227,14 @@
             <div class="col-12  text-left">
               <!-- title and description -->
               <div class="title-desc display-text anim-4">
-                <p>Arethos was founded in 2005 by a team of passionate IT professionals with the vision to provide high quality, affordable software services to Singapore.</p>
-                <p>Over a period of time, Arethos invested time and people to strengthen its expertise in Microsoft SharePoint and .Net technologies. Arethos is a Microsoft's Certified Partner in Collaboration and Content Competency "stand out as a partner that is capable of delivering SharePoint solutions" since 2009.</p>
-                <p>In 2014, Arethos expands its business horizon to North America with ALS Real Time product in the area of Fleet Management.           </p>
+                <p>Arethos was founded in 2005 by a team of passionate IT professionals with the vision to provide high
+                  quality, affordable software services to Singapore.</p>
+                <p>Over a period of time, Arethos invested time and people to strengthen its expertise in Microsoft
+                  SharePoint and .Net technologies. Arethos is a Microsoft's Certified Partner in Collaboration and
+                  Content Competency "stand out as a partner that is capable of delivering SharePoint solutions" since
+                  2009.</p>
+                <p>In 2014, Arethos expands its business horizon to North America with ALS Real Time product in the area
+                  of Fleet Management. </p>
                 <p></p>
               </div>
             </div>
@@ -601,74 +615,76 @@
 
     <div class="section section-register content-white bg-gradient-secondary " data-section="register">
 
-        <!-- title -->
-        <div class="section-title title-top">
-          <h2 class="text-stroke text-primary parallax-anim">subscribe</h2>
-        </div>
-        <!-- Begin of section wrapper -->
-        <div class="section-wrapper with-margin ">
-  
-          <!-- content -->
-          <div class="section-content anim">
-            <div class="row mb-lh-64">
-              <div class="col-12 text-left">
-                <!-- title and description -->
-                <div class="title-desc pr-4">
-                  <h2 class="display-4 anim-2">newsletter.</h2>
-                </div>
-              </div>
-              <div class="col-12  text-left">
-                <!-- title and description -->
-                <div class="title-desc display-text-big anim-4">
-                  <p>Don't miss any news via email ! Register email if you agree</p>
-                </div>
+      <!-- title -->
+      <div class="section-title title-top">
+        <h2 class="text-stroke text-primary parallax-anim">subscribe</h2>
+      </div>
+      <!-- Begin of section wrapper -->
+      <div class="section-wrapper with-margin ">
+
+        <!-- content -->
+        <div class="section-content anim">
+          <div class="row mb-lh-64">
+            <div class="col-12 text-left">
+              <!-- title and description -->
+              <div class="title-desc pr-4">
+                <h2 class="display-4 anim-2">newsletter.</h2>
               </div>
             </div>
-  
-            <div class="row">
-  
-              <div class="col-12">
-                <!-- form container form-container-signup-->
-                <div class="form-container-signup">
-  
-                  <form class="send_email_form form-container" method="post" action="ajaxserver/serverfile.php">
-                    <div class="form-desc">
-                      <div class="notice"><span class="asterisk">*</span> you agree to send email</div>
-                    </div>
-                    <div class="form-input anim-5">
-                      <div class="row">
-                        <div class="col-12 col-md-8 col-lg-10 form-group-line">
-                          <div class="form-group form-success-gone">
-                            <label for="reg-email">Email Address *</label>
-                            <input id="reg-email" name="email" class="form-control-line form-control-white" type="email" required="" placeholder="your@email.address" data-validation-type="email">
-                          </div>
-  
-                          <div class="form-group form-success-gone mb-0">
-                            <button id="submit-email" name="submit_email" class="btn btn-solid btn-primary form-success-gone mb-0"> Subscribe </button>
-                          </div>
-                        </div>
-                        <div class="col-12 col-md-4 col-lg-2">
-                        </div>
-                      </div>
-                      <div class="form-group mb-0">
-                        <div>
-                          <p class="email-ok invisible form-text-feedback form-success-visible">Your email has been
-                            registred, thank you.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </form> <!-- END send_email_form -->
-                </div>
-                <!-- End of form container form-container-signup-->
-  
+            <div class="col-12  text-left">
+              <!-- title and description -->
+              <div class="title-desc display-text-big anim-4">
+                <p>Don't miss any news via email ! Register email if you agree</p>
               </div>
             </div>
           </div>
-          <!-- end of content -->
+
+          <div class="row">
+
+            <div class="col-12">
+              <!-- form container form-container-signup-->
+              <div class="form-container-signup">
+
+                <form class="send_email_form form-container" method="post" action="ajaxserver/serverfile.php">
+                  <div class="form-desc">
+                    <div class="notice"><span class="asterisk">*</span> you agree to send email</div>
+                  </div>
+                  <div class="form-input anim-5">
+                    <div class="row">
+                      <div class="col-12 col-md-8 col-lg-10 form-group-line">
+                        <div class="form-group form-success-gone">
+                          <label for="reg-email">Email Address *</label>
+                          <input id="reg-email" name="email" class="form-control-line form-control-white" type="email"
+                            required="" placeholder="your@email.address" data-validation-type="email">
+                        </div>
+
+                        <div class="form-group form-success-gone mb-0">
+                          <button id="submit-email" name="submit_email"
+                            class="btn btn-solid btn-primary form-success-gone mb-0"> Subscribe </button>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 col-lg-2">
+                      </div>
+                    </div>
+                    <div class="form-group mb-0">
+                      <div>
+                        <p class="email-ok invisible form-text-feedback form-success-visible">Your email has been
+                          registred, thank you.</p>
+                      </div>
+                    </div>
+                  </div>
+                </form> <!-- END send_email_form -->
+              </div>
+              <!-- End of form container form-container-signup-->
+
+            </div>
+          </div>
         </div>
-        <!-- End of section wrapper -->
-  
+        <!-- end of content -->
       </div>
+      <!-- End of section wrapper -->
+
+    </div>
 
     <!-- Begin of grid list section -->
     <!-- <div class="section " data-section="products">
@@ -923,37 +939,38 @@
     <!-- Begin of register/login/signin section -->
     <div class="section section-register content-white bg-gradient-secondary " data-section="register">
 
-        <!-- title -->
-        <div class="section-title title-top">
-          <h2 class="text-stroke text-primary parallax-anim">Mission</h2>
-        </div>
-        <!-- Begin of section wrapper -->
-        <div class="section-wrapper with-margin ">
-  
-          <!-- content -->
-          <div class="section-content anim">
-            <div class="row mb-lh-64">
-              <div class="col-12 text-left">
-                <!-- title and description -->
-                <div class="title-desc pr-4">
-                  <h2 class="display-4 anim-2">Our Mission.</h2>
-                </div>
-              </div>
-              <div class="col-12  text-left">
-                <!-- title and description -->
-                <div class="title-desc display-text-big anim-4">
-                  <p>Our mission is to help businesses, governments by providing innovative, high quality software solutions and products.</p>
-                </div>
+      <!-- title -->
+      <div class="section-title title-top">
+        <h2 class="text-stroke text-primary parallax-anim">Mission</h2>
+      </div>
+      <!-- Begin of section wrapper -->
+      <div class="section-wrapper with-margin ">
+
+        <!-- content -->
+        <div class="section-content anim">
+          <div class="row mb-lh-64">
+            <div class="col-12 text-left">
+              <!-- title and description -->
+              <div class="title-desc pr-4">
+                <h2 class="display-4 anim-2">Our Mission.</h2>
               </div>
             </div>
-  
-           
+            <div class="col-12  text-left">
+              <!-- title and description -->
+              <div class="title-desc display-text-big anim-4">
+                <p>Our mission is to help businesses, governments by providing innovative, high quality software
+                  solutions and products.</p>
+              </div>
+            </div>
           </div>
-          <!-- end of content -->
+
+
         </div>
-        <!-- End of section wrapper -->
-  
+        <!-- end of content -->
       </div>
+      <!-- End of section wrapper -->
+
+    </div>
     <!-- End of register/login/signin section -->
 
     <!-- Begin of contact section -->
@@ -1010,7 +1027,8 @@
                                   <p>Email: mail@Arethos.com</p>
 
                                   <div class="icons icons-margin">
-                                    <a class="btn-icon" href="https://www.facebook.com/Arethos-Pte-Ltd-1455736018076967/">
+                                    <a class="btn-icon"
+                                      href="https://www.facebook.com/Arethos-Pte-Ltd-1455736018076967/">
                                       <i class="icon fa fa-facebook"></i>
                                     </a>
                                     <a class="btn-icon" href="https://twitter.com/arethos">
@@ -1025,7 +1043,7 @@
                                   <h4 class="display-6 display-decor text-primary">Address</h4>
                                   <p>
                                     Company address
-                                    <br>10 Ubi Crescent #07-52 
+                                    <br>10 Ubi Crescent #07-52
                                     <br>Lobby C, Singapore
                                   </p>
                                 </div>
@@ -1049,17 +1067,24 @@
                           <div class="message-form">
                             <div class="form-container form-container-card">
                               <!-- Message form container -->
-                              <form class="send_message_form message form" method="post" action="ajaxserver/serverfile.php" id="message_form">
+                              <form class="send_message_form message form" method="post"
+                                action="ajaxserver/serverfile.php" id="message_form">
                                 <div class="row">
                                   <div class="col-12 col-lg-6">
                                     <div class="form-group name">
-                                      <input id="mes-name" name="name" type="text" placeholder="Name" class="form-control form-control-outline input-full thick form-success-clean" required="">
+                                      <input id="mes-name" name="name" type="text" placeholder="Name"
+                                        class="form-control form-control-outline input-full thick form-success-clean"
+                                        required="">
                                     </div>
                                     <div class="form-group email">
-                                      <input id="mes-email" type="email" placeholder="Email" name="email" class="form-control form-control-outline input-full thick form-success-clean" required="">
+                                      <input id="mes-email" type="email" placeholder="Email" name="email"
+                                        class="form-control form-control-outline input-full thick form-success-clean"
+                                        required="">
                                     </div>
                                     <div class="form-group no-border">
-                                      <textarea id="mes-text" placeholder="Message ..." name="message" class="form-control form-control-outline thick form-success-clean" required=""></textarea>
+                                      <textarea id="mes-text" placeholder="Message ..." name="message"
+                                        class="form-control form-control-outline thick form-success-clean"
+                                        required=""></textarea>
 
                                       <div>
                                         <p class="message-ok invisible form-text-feedback form-success-visible">Your
@@ -1069,7 +1094,8 @@
                                     </div>
                                   </div>
                                   <div class="col-12 col-lg-6">
-                                    <button id="submit-message" class="btn btn-outline btn-primary email_b" name="submit_message">
+                                    <button id="submit-message" class="btn btn-outline btn-primary email_b"
+                                      name="submit_message">
                                       <span class="txt">Send Now</span>
                                       <span class="arrow-icon"></span>
                                     </button>
@@ -1110,8 +1136,10 @@
       <div class="note">
         <ul class="social">
           <li><a href="https://twitter.com/arethos"><i class="icon fa fa-twitter-square"></i></a></li>
-          <li><a href="https://sg.linkedin.com/company/arethos-pte-ltd/"><i class="icon fa fa-linkedin-square"></i></a></li>
-          <li><a href="https://www.facebook.com/Arethos-Pte-Ltd-1455736018076967/"><i class="icon fa fa-facebook-square"></i></a></li>
+          <li><a href="https://sg.linkedin.com/company/arethos-pte-ltd/"><i class="icon fa fa-linkedin-square"></i></a>
+          </li>
+          <li><a href="https://www.facebook.com/Arethos-Pte-Ltd-1455736018076967/"><i
+                class="icon fa fa-facebook-square"></i></a></li>
         </ul>
         <a href="mailto:mail@Arethos.com">
           <span class="marked">mail@Arethos.com</span>
@@ -1124,6 +1152,17 @@
   <!-- scripts -->
   <!-- All Javascript plugins goes here -->
   <script src="js\vendor\jquery-1.12.4.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('#grayscale').click(function () {
+        $('#stl').attr('href', 'style-white.css');
+      });
+      $('#original').click(function () {
+        location.reload();
+      });
+    });
+  </script>
 
   <!-- All vendor scripts -->
   <script src="js\vendor\scrolloverflow.min.js"></script>
@@ -1140,6 +1179,8 @@
 
   <!-- Javascript main files -->
   <script src="js\main.js"></script>
+
+
 
 </body>
 
